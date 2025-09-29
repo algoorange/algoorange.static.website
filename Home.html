@@ -26,6 +26,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="./Digital Hub_files/css2" rel="stylesheet">
     <title>AI Company Based in India - AlgoOrange</title>
+    <style>
+        .move-up-down {
+            animation: wave-float 12s ease-in-out infinite;
+            will-change: transform;
+        }
+
+        .move-up-down.module-2 { animation-delay: .5s; }
+        .move-up-down.module-3 { animation-delay: 1s; }
+        .move-up-down.module-4 { animation-delay: 1.5s; }
+
+        @keyframes wave-float {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(6px, -6px); }
+            40% { transform: translate(0, -12px); }
+            60% { transform: translate(-6px, -6px); }
+            80% { transform: translate(0, 0); }
+            100% { transform: translate(6px, 6px); }
+        }
+    </style>
 </head>
 
 <body data-localscroll-offset="80" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="minimal"
